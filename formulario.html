@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Formulario HTML</title>
+    <link rel="stylesheet" type="text/css" href="/estilo/stylesformulario.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="pelicula.html">Película</a></li>
+            <li><a href="personaje.html">Personajes</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+    <h2>Formulario de ejemplo</h2>
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+
+        <label for="genero">Género:</label>
+        <input type="radio" id="genero_masculino" name="genero" value="Masculino"> Masculino
+        <input type="radio" id="genero_femenino" name="genero" value="Femenino"> Femenino
+        <input type="radio" id="genero_otros" name="genero" value="Otros"> Otros<br><br>
+
+
+
+        <label for="comentarios">Comentarios sobre la pelicula:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
